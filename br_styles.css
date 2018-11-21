@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Juan Verduzco
+   Date: 11/09/18
+	
+   Filename: br_styles.css
+
+*/
+
+
+
+html {
+    background-image: url(br_paper.png);
+}
+
+body {
+    width: 100%;
+    max-width: 960px;
+    min-width: 640px;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    background-color: burlywood;
+    box-shadow: -50px 25px 5px rgba(0, 0, 0, .6);
+}
+
+#logo {
+    filter: drop-shadow(brown -10px 10px 5px)
+}
+
+.hnav a {
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
+
+.lades {
+    display: block;
+    width: 20%;
+    float: left;
+    margin: 3%;
+    border-left: brown double 1px;
+    border-bottom: brown double 1px;
+    box-shadow: -5px 5px 5px brown
+}
+
+.lades p {
+    transform: translateX(10px)
+}
+
+.des {
+    display: block;
+    width: 70%;
+    float: left;
+    margin-top: 3%;
+    box-shadow: -5px 5px 5px brown
+}
+
+.des p {
+    transform: translateX(10px)
+}
+
+.l2 a {
+    display: block;
+    width: 25%;
+    float: left;
+    background-color: burlywood;
+}
+
+.vws {
+    clear: both;
+    /* border: 1px double blue; */
+    border-radius: 30px;
+    text-align: center;
+    /* box-shadow: 1px 1px 5px rgb(25, 25, 105) */
+    transform: translateY(10px);
+}
+
+
+#vws1 {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    box-shadow: -2px 2px 10px brown;
+    perspective: 600px;
+    transform: TranslateZ(-20px);
+}
+
+#vws2 {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    box-shadow: -2px 2px 10px brown;
+}
+
+#vws3 {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    box-shadow: -2px 2px 10px brown;
+    perspective: 600px;
+    transform: translateZ(-20px);
+}
+
+.vws:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.des {
+    border-left: brown double 1px;
+    border-bottom: brown double 1px;
+}
+
+.l2 {
+    display: block;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+footer:after {
+    clear: both;
+    content: "";
+    display: table;
+}
